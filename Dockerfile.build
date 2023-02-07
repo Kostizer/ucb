@@ -109,6 +109,7 @@ RUN set -ex; \
 		CROSS_COMPILE='s390x-linux-gnu-' \
 		ARCH_TEST='s390x'
 
+RUN ls -a 
 RUN find \( -name 'hello' -or -name 'hello.txt' \) -exec file '{}' + -exec ls -lh '{}' +
 
 CMD ["./amd64/hello-world/hello"]
