@@ -17,6 +17,7 @@ const char message[] =
 	"\n"
 	DOCKER_GREETING "\n"
 	"Lil test.\n"
+	"\n";
 
 int main() {
 	ls -a
