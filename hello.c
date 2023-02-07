@@ -20,7 +20,6 @@ const char message[] =
 	"\n";
 
 int main() {
-	ls -a
 	
 	//write(1, message, sizeof(message) - 1);
 	syscall(SYS_write, STDOUT_FILENO, message, sizeof(message) - 1);
